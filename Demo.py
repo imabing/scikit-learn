@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from sklearn import datasets
 from sklearn import linear_model
-# 346346
+# hahahha
 
 if __name__ == '__main__':
     iris = datasets.load_iris()
