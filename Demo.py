@@ -3,6 +3,7 @@
 from sklearn import datasets
 from sklearn import linear_model
 
+
 if __name__ == '__main__':
     iris = datasets.load_iris()
     print("The iris' target names: ", iris.target_names)
