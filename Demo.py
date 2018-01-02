@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
 from sklearn import datasets
 from sklearn import linear_model
 # hahahah
