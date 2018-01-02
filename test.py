@@ -16,3 +16,7 @@ if __name__ == '__main__':
     linear.coef_  # 系数
     linear.intercept_  # 截距
     print("predict: ", linear.predict([[7, 5, 2, 0.5], [7.5, 4, 7, 2]]))
+    # ====================逻辑回归=======================
+    logistic = linear_model.LogisticRegression()
+    # logistic.predict()
+    # print("predict: ", logistic.predict([[7, 5, 2, 0.5], [7.5, 4, 7, 2]]))
