@@ -9,7 +9,6 @@ if __name__ == '__main__':
     x = iris.data
     #标签 0,1,2 代表三个类别
     y = iris.target
-
     #====================线性回归=======================
     linear = linear_model.LinearRegression()
     linear.fit(x, y)
