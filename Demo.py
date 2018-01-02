@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
-from sklearn import datasets
-from sklearn import linear_model
-# hahahah
+
+import pandas as pd
 
 if __name__ == '__main__':
-    iris = datasets.load_iris()
-    print("The iris' target names: ", iris.target_names)
-    x = iris.data
-    y = iris.target
-
-    linear = linear_model.LinearRegression()
-    linear.fit(x, y)
-    print("linear's score: ", linear.score(x, y))
-    linear.coef_  # 系数
-    linear.intercept_  # 截距
-    print("predict: ", linear.predict([[7, 5, 2, 0.5], [7.5, 4, 7, 2]]))
+    iris = pd.read_csv("iris.csv")
+    col_list = ['萼长', '萼宽', '瓣长', '瓣宽', '类别']
+    iris.columns = col_list
+    #打印数据集
+    # print(iris)
+    # 数据集列统计
+    print(iris.describe())
+    # 鸢尾花类别:{'versicolor', 'virginica', 'setosa'}
+    classes=set(iris.loc[:,'类别'])
+    print(classes)
