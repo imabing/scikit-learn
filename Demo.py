@@ -12,4 +12,4 @@ if __name__ == '__main__':
     print(iris.describe())
     # 鸢尾花类别:{'versicolor', 'virginica', 'setosa'}
     classes=set(iris.loc[:,'类别'])
-    print(classes)
+    # print(classes)
